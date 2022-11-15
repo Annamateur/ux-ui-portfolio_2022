@@ -1,0 +1,75 @@
+body {
+    background-color: #C2C7C9;
+    position: relative;
+	overflow: scroll;
+	height: 100vh;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 10rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+header {
+    padding-top: 1.5rem;
+}
+
+nav {
+    position: fixed;
+    top: 1rem;
+    width: 50%;
+}
+
+li {
+    float: left;
+    list-style-type: none;
+}
+
+li a {
+    display: block;
+    padding: 0 18px 0 18px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+li a:hover {
+    color: blue;
+  }
+
+.active {
+    color: #04AA6D;
+  }
+
+
+
+#about_me {
+    width: 40%;
+    position: relative;
+}
+
+
+
+
+.button {
+    background-color:black;
+    padding: 1.375rem 2.813rem;
+    border-radius: 100px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
