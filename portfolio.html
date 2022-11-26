@@ -4,39 +4,225 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Page</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <link rel="stylesheet" href="styles.css">
-    <title>Hello</title>
 </head>
 
 <body>
-    <header>
-            <nav>                
+    <header id="header">
+        <div class="navbar">      
                 <ul>
                     <li><a href="#case_studies">Case Studies</a></li>
                     <li><a href="#about_me">About me</a></li>
+                    <li><a href="#contact">Get in Touch</a></li>
                 </ul>
-            </nav>
+        </div>   
 
-        <h1>Portfolio <br> <span style="text-transform: uppercase">UX/UI</span></h1>   
+        <div class="title">
+            <h1>Portfolio<br><span style="text-transform: uppercase">UX/UI</span>
+            </h1>   
+        </div> 
     </header>
     
     <main>
-        <div>
-        <!-- <a id="about_me" class="button">About me</a> -->
+        <section id="case_studies">
+            <div class="cs_title_background">
+                <h1 id="cs_title">Case Studies</h1>   
+            </div> 
+
+            <div class="slider">
+                <div class="slides">
+                    <div id="slide-1">
+                        <p><span style="text-decoration: underline;">UX/UI Design</span>
+                            <br><a href="https://www.hetoogvandeorkaan.nl">hetoogvandeorkaan.nl</a>
+                            <br><br>A Website for<br>Ciska Matthes,<br>Yoga Teacher
+                            <br><br><br>
+                            <span class="cs_button">
+                                <button id="cs_1-button" class="button">SHOW MORE</button>
+                            </span>
+                        </p>
+                    </div>
+                    <div id="slide-2">
+                        <p><span style="text-decoration: underline;">UX/UI Design</span>
+                            <br><a href="https://www.hetoogvandeorkaan.nl">apps.apple.com/arun</a>
+                            <br><br>A Mobile App for<br>Arun –
+                            <br>Meditation & Science
+                            <br><br><br>
+                            <span class="cs_button">
+                                <button class="button" onclick="myFunction()">SHOW MORE</button>
+                            </span>
+                        </p>                    
+                    </div>
+                    <div id="slide-3">
+                        <p><span style="text-decoration: underline;">UX/UI Design</span>
+                            <br><a href="https://www.hetoogvandeorkaan.nl">apps.apple.com/lorem</a>
+                            <br><br>A Mobile App for<br>Lorem Ipsum
+                            <br>The Final Project
+                            <br><br><br>
+                            <span class="cs_button">
+                                <button class="button" onclick="myFunction()">SHOW MORE</button>
+                            </span>
+                        </p>                    
+                    </div>
+                    <div id="slide-4">
+                        <p><span style="text-decoration: underline;">UX Writing</span>
+                            <br><a href="https://www.hetoogvandeorkaan.nl">masterpatternman.com</a>
+                            <br><br>A Website for<br>Master Patternman,
+                            <br>Artist
+                            <br><br><br>
+                            <span class="cs_button">
+                                <button class="button" onclick="myFunction()">SHOW MORE</button>
+                            </span>
+                        </p>                    
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <!--SHOW MORE-->
+        <div id="modal-case-study_1" class="modal">
+            <div class="modal-content">
+                <span class="close">X</span>
+                <p><span style="text-decoration: underline;">UX/UI Design</span>
+                    <br><a href="https://www.hetoogvandeorkaan.nl">hetoogvandeorkaan.nl</a>
+                    <br><br>A Website for Ciska Matthes
+                    <br>Yoga, Meditation & Mindfulness Teacher
+                    <br>Amsterdam
+                    <br>
+                </p>
+                <img src="img/Device-Macbook_Air.jpg" class="image">
+
+                <p><span style="text-decoration: underline;">The Process</span>
+                    <br><br>Research & Interviews<br>Ideation<br>Prototype & Testing
+                    <br>
+                </p>
+                <div class="row_modal">
+                        <div class="column_modal">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                    Fuga corporis cupiditate sed in consequuntur dolore minima 
+                                    recusandae repellendus iure numquam tempora voluptate vero
+                                    molestias dolores a, animi quaerat laboriosam obcaecati. 
+                                    <br><br>Quos est natus, deleniti officia aliquam nemo accusantium 
+                                    recusandae magnam eius voluptates. Porro expedita vitae qui 
+                                    fugit voluptas placeat. Praesentium, maiores quisquam.
+                                    Facere minima a quidem explicabo repudiandae cumque rerum animi 
+                                    aperiam commodi! Tempora laudantium accusamus voluptates ea ad 
+                                    officiis nam, reprehenderit aut neque.
+                                </p>
+                        </div>
+                        <div class="column_modal">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                    Fuga corporis cupiditate sed in consequuntur dolore minima 
+                                    recusandae repellendus iure numquam tempora voluptate vero
+                                    molestias dolores a, animi quaerat laboriosam obcaecati. 
+                                    <br><br>Quos est natus, deleniti officia aliquam nemo accusantium 
+                                    recusandae magnam eius voluptates. Porro expedita vitae qui 
+                                    fugit voluptas placeat. Praesentium, maiores quisquam.
+                                    Facere minima a quidem explicabo repudiandae cumque rerum animi 
+                                    aperiam commodi! Tempora laudantium accusamus voluptates ea ad 
+                                    officiis nam, reprehenderit aut neque.
+                                </p>
+                        </div>
+                </div>
+                <img src="img/Yin Yoga class(1).jpg" class="image">
+                <img src="img/Yin Yoga class(2).jpg" class="image">
+                <img src="img/Yin Yoga class.jpg" class="image">
+            </div>
         </div>
+        <script>
+            // Get the modal
+            var modal = document.getElementById("modal-case-study_1");
+            
+            // Get the button that opens the modal
+            var btn = document.getElementById("cs_1-button");
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+            </script>
+            
 
         <section id="about_me">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius incidunt inventore dolorum aspernatur vel pariatur tenetur reiciendis veritatis quam, voluptatum eaque! Id dolorem sunt maxime doloremque expedita unde labore modi? Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <div>
+                <h1 id="am_title">About me</h1>   
+            </div> 
+
+            <div class="row">
+                <div class="column_about_me_1">
+                    <div id="am_img">
+                        <p class="emoji" style="font-size: 10rem">🙋🏻‍♀️</p> 
+                    </div>
+                </div>
+
+                <div class="column_about_me_2">
+                    <div id="am_text">
+                        <h2>Hi, I'm Anna ––– a UX/UI Designer</h2>
+                        <br><br>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius incidunt 
+                            inventore dolorum aspernatur vel pariatur tenetur reiciendis veritatis 
+                            quam, voluptatum eaque!<br><br>Id dolorem sunt maxime doloremque expedita unde 
+                            labore modi? Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            <br><br>I work with Figma, Photoshop, Indesign, VS Code and many more.</p>
+                    </div>
+                </div>
+
         </section>
 
-        <section id="case_studies">
+        <section id="contact">
+            <div>
+                <h1 id="c_title">Get in Touch</h1>   
+            </div> 
 
+            <div class="row">
+                <div class="column_contact" id="column_contact_1">
+                    <a href="#" style="font-size: 4rem; color: black;" class="fa fa-linkedin"></a>
+                    <br><br><br><br>
+                    <p style="font-size: 2rem; font-weight: 500; text-align: center;">Visit my <br>Linkdin profil</p>
+                </div>
+                
+                <div class="column_contact" id="column_contact_2">
+                    <p style="font-size: 4rem; font-weight: bold; text-align: center;">&</p>
+                </div>
+
+                <div class="column_contact" id="column_contact_3">
+                    <a href="#" style="font-size: 8rem; font-weight: bold; color: black;" id="mail-icon">&#9993;</a>
+                    <br><br>
+                    <p style="font-size: 2rem; font-weight: 500; text-align: center;" id="mail-text">send me<br>a message!</p>
+                </div>
+            </div>
+            <div class="wavy"></div>
         </section>
+    </section>
+
     </main>
 </body>
+
 <footer>
-    <p style="font-size: 10rem">🙋🏻‍♀️</p> 
 </footer>
+
 </html>
 
 

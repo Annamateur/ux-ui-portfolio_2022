@@ -1,15 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #C2C7C9;
-    position: relative;
-	overflow: scroll;
-	height: 100vh;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    width: 100%;
+    height: 100vh;
+    border: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    animation: changeBg 15s linear infinite;
+}
+
+@keyframes changeBg {
+    0% {
+        background-color: #C2C7C9;
+    
+    }
+    20% {
+        background-color:lightcyan;
+    
+    }
+    40% {
+        background-color:antiquewhite;
+    
+    }
+    60% {
+        background-color:rgb(115, 158, 159);
+    
+    }
+    80% {
+        background-color:rgb(255, 225, 214);
+    
+    }
+    100% {
+        background-color:lightsteelblue;
+    
+    }
+}
+
+a {
+    text-decoration: none;
+    color: blue;
 }
 
 h1 {
-    font-size: 10rem;
+    font-size: 6rem;
+    margin: 0;
 }
 
 h2 {
@@ -20,28 +57,46 @@ h3 {
     font-size: 1rem;
 }
 
-header {
-    padding-top: 1.5rem;
+
+/* header */
+
+#header {
+    width: 100%;
+    height: 88vh;
+    padding-top: 10px;
+    padding-left:40px;
+    padding-right: 32px;
+    animation: changeBg 15s linear infinite;
 }
 
-nav {
+.navbar {
+    overflow: hidden;
+    background-color: none;
     position: fixed;
-    top: 1rem;
-    width: 50%;
+    top: 40;
+    width: 95%;
 }
 
-li {
-    float: left;
+.navbar ul{
     list-style-type: none;
+    margin: 0;
+    text-align: right;
 }
 
-li a {
+.navbar li{
+    display: inline-block;
+
+}
+
+.navbar a {
+    float: right;
     display: block;
-    padding: 0 18px 0 18px;
     color: black;
+    text-align: center;
+    padding: 25px 25px;
     text-decoration: none;
-    cursor: pointer;
     font-size: 1.5rem;
+    cursor: pointer;
 }
 
 li a:hover {
@@ -50,26 +105,407 @@ li a:hover {
 
 .active {
     color: #04AA6D;
-  }
-
-
-
-#about_me {
-    width: 40%;
-    position: relative;
 }
 
+.title {
+    padding-top: 80px;
+}
 
+/* case studies */
 
+#case_studies {
+    width: 100%;
+    height: 88vh;
+}
+
+/*
+.cs_title_background {
+    width: 100%;
+    height: 12vh;
+    background-color: white;
+}
+*/
+
+#cs_title {
+    padding-top: 26px;
+    padding-left: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-size: 3rem;
+}
+
+.row {
+    margin-left: 120px;
+    margin-right: 140px;
+}
+
+.column {
+    float: left;
+    width: 30%;
+    padding-left: 0;
+    padding-right: 100px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card {
+    width: 100%;
+    background: white;
+    padding-bottom: 10px;
+    transition: 0.3s;
+}
+  
+.card_img {
+    border-radius: 0 0 0 0;
+}
+  
+.card:hover {
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+    cursor:zoom-in;
+}
+  
+.container {
+    padding: 2px 32px;
+}
+
+.card_text {
+    align-content: center;
+}
+
+.cs_button {
+    margin: 20px;
+}
 
 .button {
+    margin-bottom: 2rem;
     background-color:black;
-    padding: 1.375rem 2.813rem;
-    border-radius: 100px;
+    padding: 1.2rem 2.5rem;
+    border: none;
+    border-radius: 480px;
     color: white;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
+}
+
+/* SLIDER */
+
+.slider {
+    width: 80%;
+    overflow: hidden;
+    margin-top: 140px;
+    margin-left: 140px;
+    margin-right: 140px;
   }
+  
+.slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.slides::-webkit-scrollbar {
+    width: 1px;
+    height: 1px;
+}
+.slides::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 40px;
+}
+.slides::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+  
+  .slides > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 320px;
+    height: 350px;
+    margin-right: 50px;
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-bottom: 48px;
+    padding-top: 48px;
+    background-color:#d5d8da;
+    border-radius: 10px;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  
+  .slider > a {
+    display: inline-flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: white;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 0 0.5rem 0;
+    position: relative;
+  }
+  
+  .slider > a:active {
+    top: 1px;
+  }
+  .slider > a:focus {
+    background: #000;
+  }
+
+
+/* MODAL */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 40px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(255, 225, 214); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: white;
+    margin: auto;
+    padding: 40px;
+    width: 95vw;
+    height: auto;
+    font-size: 1.4rem;
+}
+
+.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 60%;
+}
+
+.row_modal {
+    margin-left:80px;
+    margin-right: 40px; 
+    margin-bottom: 150px;
+    width: 100%;
+}
+
+.column_modal {
+    float: left;
+    width: 35%;
+    margin-left: 50px;
+    margin-right: 50px; 
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+  
+/* The Close Button */
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+}
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+/* about me */
+
+#about_me {
+    width: 100%;
+    height: 88vh;   
+    padding-left: 40px;
+    animation: changeBg 15s linear infinite;
+}
+
+#am_title {
+    padding-top: 26px;
+    height: 12vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.row {
+    width: 80%;
+    height: auto;
+    padding-top: 40px;
+    padding-left: 85px;
+}
+
+.column_about_me_1 {
+    float: left;
+    width: 24%;
+    height: 40%;
+    margin-top: 24px;
+    margin-left: 80px;
+    padding: 100px 10px;
+}
+
+.column_about_me_2 {
+    float: left;
+    width: 50%;
+    height: 40%;
+    margin-top: 1px;
+    margin-left: 80px;
+    padding: 100px 10px;
+}
+
+#am_text {
+    font-size: 1.25rem;
+}
+
+#am_img {
+    padding-top: 20px;
+}
+
+.emoji {
+    margin: 0;
+    padding: 0;
+    font-size: 10rem;
+    text-align: left;
+}
+
+/* GET IN TOUCH */
+
+#contact {
+    width: 100%;
+    height: 100vh;   
+}
+
+#c_title {
+    padding-top: 26px;
+    padding-left: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-size: 3rem;
+}
+
+.column_contact {
+    float: left;
+    width: 25%;
+    height: auto;
+    margin-top: 200px;
+    margin-left: 40px;
+    text-align: center;
+    color:black;
+}
+
+#column_contact_1 {
+    text-align: center;
+    margin-top: 210px;
+}
+
+#column_contact_2 {
+    text-align: center;
+    margin-top: 280px;
+}
+
+#column_contact_3 {
+    text-align: center;
+    margin-top: 70px;
+    margin-top: 170px;
+}
+
+#mail-icon {
+    margin-top: 0px;
+}
+
+#mail-text {
+    margin-top: -8px;
+}
+
+.wavy {
+    position: relative;
+    width: 150px;
+    height: 50px;
+    background: none;
+}
+
+/* FOOTER
+.bouncing_ball{
+    background-color: blue;
+    border-radius: 100%;
+    height: 50px;
+    left: calc(90% - 5px);
+    position: absolute;
+    right: calc(50% - 50px);
+    width: 50px;
+    animation: bounce 1.2s ease-in-out infinite;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    cursor: pointer;
+  }
+  
+  .ball_bouncing {
+    border-radius: 100%;
+    bottom: 32.5%;
+    left: calc(50% - 50px);
+    right: calc(50% - 50px);
+    position: absolute;
+    content: '';
+    background-color: black;
+    filter: blur(3px);
+    width: 50px;
+    height: 5px;
+    animation: shadow 1s ease-in-out infinite;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    z-index: -1;
+  }
+  
+  @keyframes bounce {
+    from {
+      top: 345%;
+      transform: scaleX(79.5%) scaleY(65%);
+    }
+    to {
+      top: 290%;
+    }
+  }
+  
+  
+  @keyframes shadow {
+    from {
+      opacity: 0;
+      transform: scale(0);
+    }
+    to {
+      opacity: .5;
+      transform: scale(100%);
+    }
+  }
+ */
+
+
+
+
+
+
+

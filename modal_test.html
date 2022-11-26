@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Y-axis resizable modal</title>
+    <meta name="description" content="A simple HTML5 Template for new projects.">
+    <meta name="author" content="Marco Rapaccini">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Simple Y-axis scrollable modal</h1>
+        <h2>Modals look easy, right?</h2>
+        <h3>Reality is that they are often <em>painful</em>...</h3>
+    </header>
+    <div class="main-container">
+        <div><a href="https://en.wikipedia.org/wiki/Modal_window" target="_blank">(WTF is a modal?)</a><span>🤔</span></div>
+        <div><button class="modal-open-button modal-open-button-default" id="modal-open-button-default">Default Modal</button></div>
+        <div><button class="modal-open-button modal-open-button-scrollable" id="modal-open-button-scrollable">Scrollable Modal</button></div>
+    </div>
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="modal-container" id="modal-container-not-scrollable">
+        <div class="modal-container-controls">
+            <button class="modal-container-close-button">Close</button>
+        </div>
+        <div class="modal-container-content">
+            <p><strong>Default modal</strong></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim praesent elementum facilisis leo vel fringilla est ullamcorper. Et netus et malesuada fames ac turpis egestas maecenas pharetra. Euismod elementum nisi quis eleifend quam. Aliquam eleifend mi in nulla posuere sollicitudin. Lorem ipsum dolor sit amet consectetur adipiscing elit duis. Id diam maecenas ultricies mi eget mauris pharetra et. Elit sed vulputate mi sit amet mauris commodo. Lorem ipsum dolor sit amet consectetur. Sed vulputate odio ut enim blandit volutpat maecenas. Aliquet bibendum enim facilisis gravida neque convallis a cras semper. Amet luctus venenatis lectus magna. Tellus id interdum velit laoreet. Volutpat consequat mauris nunc congue nisi vitae suscipit. Bibendum ut tristique et egestas quis ipsum suspendisse. Scelerisque eu ultrices vitae auctor eu augue ut. Viverra maecenas accumsan lacus vel facilisis volutpat. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Nisl pretium fusce id velit ut.</p>
+            <p>Nullam vehicula ipsum a arcu cursus vitae congue. Est ante in nibh mauris cursus. Tellus id interdum velit laoreet id donec ultrices tincidunt arcu. Viverra ipsum nunc aliquet bibendum enim. Neque egestas congue quisque egestas diam in arcu cursus. Duis ut diam quam nulla porttitor massa. Morbi tincidunt ornare massa eget egestas purus viverra accumsan. Sed sed risus pretium quam vulputate. Sapien eget mi proin sed libero enim. Pellentesque nec nam aliquam sem et tortor. Tellus in hac habitasse platea. Sollicitudin nibh sit amet commodo nulla facilisi. Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum est. Elementum pulvinar etiam non quam.</p>
+        </div>
+    </div>
+    <div class="modal-container" id="modal-container-scrollable">
+        <div class="modal-container-controls">
+            <button class="modal-container-close-button">Close</button>
+        </div>
+        <div class="modal-container-content">
+            <div class="modal-container-content-no-scroll"><p><strong>This title is fixed</strong></p></div>
+            <div class="modal-container-content-scroll">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim praesent elementum facilisis leo vel fringilla est ullamcorper. Et netus et malesuada fames ac turpis egestas maecenas pharetra. Euismod elementum nisi quis eleifend quam. Aliquam eleifend mi in nulla posuere sollicitudin. Lorem ipsum dolor sit amet consectetur adipiscing elit duis. Id diam maecenas ultricies mi eget mauris pharetra et. Elit sed vulputate mi sit amet mauris commodo. Lorem ipsum dolor sit amet consectetur. Sed vulputate odio ut enim blandit volutpat maecenas. Aliquet bibendum enim facilisis gravida neque convallis a cras semper. Amet luctus venenatis lectus magna. Tellus id interdum velit laoreet. Volutpat consequat mauris nunc congue nisi vitae suscipit. Bibendum ut tristique et egestas quis ipsum suspendisse. Scelerisque eu ultrices vitae auctor eu augue ut. Viverra maecenas accumsan lacus vel facilisis volutpat. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Nisl pretium fusce id velit ut.</p>
+                <p>Nullam vehicula ipsum a arcu cursus vitae congue. Est ante in nibh mauris cursus. Tellus id interdum velit laoreet id donec ultrices tincidunt arcu. Viverra ipsum nunc aliquet bibendum enim. Neque egestas congue quisque egestas diam in arcu cursus. Duis ut diam quam nulla porttitor massa. Morbi tincidunt ornare massa eget egestas purus viverra accumsan. Sed sed risus pretium quam vulputate. Sapien eget mi proin sed libero enim. Pellentesque nec nam aliquam sem et tortor. Tellus in hac habitasse platea. Sollicitudin nibh sit amet commodo nulla facilisi. Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum est. Elementum pulvinar etiam non quam.</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
