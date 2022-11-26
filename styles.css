@@ -396,7 +396,7 @@ li a:hover {
 
 #contact {
     width: 100%;
-    height: 100vh;   
+    height: 90vh;   
 }
 
 #c_title {
@@ -441,23 +441,30 @@ li a:hover {
     margin-top: -8px;
 }
 
+/*FOOTER*/
+
+footer {
+    width: 100%;
+    height: 60px;
+}
 .wavy {
     position: relative;
-    width: 150px;
-    height: 50px;
+    width: 100%;
+    height: 80px;
     overflow: hidden;
 }
 
 .wavy::before {
-    content: 'aaaaaaaaaaaa';
+    content: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
     position: absolute;
     top: -42px;
     left: 0;
     font-size: 4em;
     color: transparent;
     text-decoration-style: wavy;
-    text-decoration:lightskyblue;
-    animation: animate 2s linear infinite;
+    text-decoration-line: underline;
+    text-decoration-color:white;
+    animation: animate 1s linear infinite;
 }
 
 @keyframes animate {
